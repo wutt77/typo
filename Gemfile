@@ -24,7 +24,7 @@ group :production do
 end
 
 source 'https://rubygems.org'
-ruby "1.9.2"
+ruby "1.9.3"
 
 gem 'thin'
 gem 'rails', '~> 3.0.10'
@@ -57,4 +57,8 @@ group :development, :test do
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
   gem 'capybara'
+end
+
+group :development, :test do
+  gem 'railroady'
 end

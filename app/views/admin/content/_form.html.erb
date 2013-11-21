@@ -140,6 +140,14 @@
     </div>
   </div>
 
+  <div class='merge_article'>
+    <h4><%= _("Merge Articles") %></h4>
+    <%= label 'merge', 'with', "Article ID"%>
+    <%= text_field 'merge', 'with', :name=>'merge_with' %>
+    <button class = 'btn' name="create_merged" type="submit">
+    <%= _("Merge") %> </button>
+  </div>
+
   <div class=''>
     <h4><%= _("Uploads") %></h4>
     <p class='help-block'>Uploads will be displayed as attachments in your RSS feed, but won't appear in your articles.</p>
@@ -150,4 +158,5 @@
   </div>
 
 </div>
+
 
